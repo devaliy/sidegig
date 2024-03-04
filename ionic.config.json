@@ -1,0 +1,7 @@
+{
+  "name": "sidegig",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
