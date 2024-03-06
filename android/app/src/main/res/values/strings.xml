@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SideGig Gallery App</string>
+    <string name="title_activity_main">SideGig Gallery App</string>
+    <string name="package_name">sidegig.app.gallery</string>
+    <string name="custom_url_scheme">sidegig.app.gallery</string>
+</resources>

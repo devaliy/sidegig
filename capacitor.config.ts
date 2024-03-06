@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'sidegig',
+  appId: 'sidegig.app.gallery',
+  appName: 'SideGig Gallery App',
   webDir: 'www',
   server: {
     androidScheme: 'https'
