@@ -23,8 +23,6 @@
               <span>
                 <img [src]="image.urls.small">
               </span>
-
-
             </div>
           </ion-col>
         </ion-row>
@@ -42,9 +40,9 @@
           <ion-item lines="none">
               <ion-button fill=""  slot="start">Share your image</ion-button>
               <ion-label>
-                  <ion-icon name="logo-twitter" (click)="shareViaTwitter(image.urls.regular,image.alt_description)" class="ion-padding"></ion-icon>
-                  <ion-icon name="logo-facebook" (click)="shareViaFacebook(image.urls.regular, image.alt_description)" class="ion-padding"></ion-icon>
-                  <ion-icon name="logo-instagram" (click)="shareViaInstagram(image.urls.regular, image.alt_description)" class="ion-padding"></ion-icon>
+                  <ion-icon name="logo-twitter" (click)="shareViaTwitter(image.urls.regular,image.alt_description)"></ion-icon>
+                  <ion-icon name="logo-facebook" (click)="shareViaFacebook(image.urls.regular, image.alt_description)"></ion-icon>
+                  <ion-icon name="logo-instagram" (click)="shareViaInstagram(image.urls.regular, image.alt_description)"></ion-icon>
               </ion-label>
           </ion-item>
 
@@ -53,4 +51,7 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+  <div *ngIf="images.length === 0">
+    <p class="ion-text-center">No images(Rate Limit Exceeded)</p>
+  </div>
 </ion-content>

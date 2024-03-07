@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../services/api.service';
-import { Share } from '@capacitor/share';
 import { NavController, Platform } from '@ionic/angular';
 import { SocialSharing } from '@awesome-cordova-plugins/social-sharing/ngx';
 @Component({
@@ -12,32 +11,25 @@ export class HomePage implements OnInit {
   images: any[] = [];
   gridImages: any[] = [];
 
-  constructor(private apiService: ApiService, private platform: Platform, private socialSharing: SocialSharing, private navCtrl: NavController) { }
+  constructor(private apiService: ApiService, private platform: Platform,private socialSharing: SocialSharing, private navCtrl: NavController) { }
 
   ngOnInit(): void {
      this.getPics()
-    this.getGridPics()
-  }
-
-  async share(link: string, desc: string) {
-    await Share.share({
-      title: "Image title",
-      text: desc,
-      url: link,
-      dialogTitle: 'Share with buddies',
-    });
+     this.getGridPics()
   }
 
   getPics() {
       this.apiService.get().subscribe({
         next: (data) => {
           this.images = data
+          console.log(this.images)
         },
         error: (error) => {
           console.error('Error fetching record:', error)
         }
       });
   }
+
   getGridPics() {
       this.apiService.getGrid().subscribe({
         next: (data) => {
@@ -49,57 +41,56 @@ export class HomePage implements OnInit {
       });
   }
 
-   async shareToTwitter(imageUrl: string, desc: string) {
-    const shareOptions = {
-      title: 'Share via Twitter',
-      text: desc,
-      url: `twitter://post?message=${encodeURIComponent(desc)}&url=${encodeURIComponent(imageUrl)}`,
-      dialogTitle: 'Share via Twitter'
-    };
+  async shareViaTwitter(imageurl: string, desc: string) {
+     try {
+       const base64String = await this.apiService.downloadAndConvertImage(imageurl);
+        this.socialSharing.shareViaTwitter(desc,  base64String)
+        .then(response => {
+          console.log(response);
+        })
+        .catch(e => {
+          console.log(e);
+        });
 
-    // Check if Twitter is available
-    const available = await Share.canShare();
-
-    if (available) {
-      // Share the image to Twitter
-      await Share.share(shareOptions);
-    } else {
-      // Twitter not available, handle accordingly (open Twitter website or display error)
-      console.error('Twitter not available');
-    }
-   }
-
-  shareViaTwitter(link: string, desc: string) {
-     console.log(link)
-    this.socialSharing.shareViaTwitter(desc, link)
-    .then(response => {
-      console.log(response);
-    })
-    .catch(e => {
-      console.log(e);
-    });
+    } catch (error) {
+      console.error('Error downloading and converting image:', error);
+      return
+     }
   }
 
-  shareViaFacebook(link: string, desc: string) {
-    console.log(link)
-    this.socialSharing.shareViaFacebook(desc, link)
-    .then(response => {
-      console.log(response);
-    })
-    .catch(e => {
-      console.log(e);
-    });
+
+  async shareViaFacebook(imageurl: string, desc: string) {
+     try {
+       const base64String = await this.apiService.downloadAndConvertImage(imageurl);
+        this.socialSharing.shareViaFacebook(desc,  base64String)
+        .then(response => {
+          console.log(response);
+        })
+        .catch(e => {
+          console.log(e);
+        });
+
+    } catch (error) {
+      console.error('Error downloading and converting image:', error);
+      return
+     }
   }
 
-  shareViaInstagram(link: string, desc: string) {
-    console.log(link)
-    this.socialSharing.shareViaInstagram(desc, link)
-    .then(response => {
-      console.log(response);
-    })
-    .catch(e => {
-      console.log(e);
-    });
+  async shareViaInstagram(imageurl: string, desc: string) {
+     try {
+       const base64String = await this.apiService.downloadAndConvertImage(imageurl);
+         this.socialSharing.shareViaInstagram(desc,  base64String)
+        .then(response => {
+          console.log(response);
+        })
+        .catch(e => {
+          console.log(e);
+        });
+
+    } catch (error) {
+      console.error('Error downloading and converting image:', error);
+      return
+     }
   }
 
   handleRefresh(event: any) {
@@ -112,5 +103,6 @@ export class HomePage implements OnInit {
         event.target.complete();
     }, 2000);
   }
+
 
 }

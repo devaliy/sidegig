@@ -14,12 +14,16 @@
     "@capacitor/android": "5.7.1",
     "@capacitor/app": "5.0.7",
     "@capacitor/core": "5.7.1",
+    "@capacitor/filesystem": "^5.2.1",
     "@capacitor/haptics": "5.0.7",
     "@capacitor/keyboard": "5.0.8",
     "@capacitor/share": "^5.0.7",
+    "@capacitor/splash-screen": "^5.0.7",
     "@capacitor/status-bar": "5.0.7",
     "@ionic/angular": "^7.0.0",
+    "axios": "^1.6.7",
     "cordova-plugin-x-socialsharing": "^6.0.4",
+    "file-type": "^19.0.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
@@ -81,6 +85,10 @@
         "hash": "1151538777131426085"
       },
       {
+        "file": "README.md",
+        "hash": "16734465523506855753"
+      },
+      {
         "file": "android/.gitignore",
         "hash": "16088808965373471785"
       },
@@ -94,7 +102,7 @@
       },
       {
         "file": "android/app/capacitor.build.gradle",
-        "hash": "15733384839626770790"
+        "hash": "12473496709448555897"
       },
       {
         "file": "android/app/proguard-rules.pro",
@@ -106,10 +114,6 @@
       },
       {
         "file": "android/app/src/main/AndroidManifest.xml",
-        "hash": "16730505591845884225"
-      },
-      {
-        "file": "android/app/src/main/AndroidManifest.xml.orig",
         "hash": "15143078514206279353"
       },
       {
@@ -270,7 +274,7 @@
       },
       {
         "file": "android/capacitor.settings.gradle",
-        "hash": "2366800821823560015"
+        "hash": "14345163513266079685"
       },
       {
         "file": "android/gradle.properties",
@@ -318,11 +322,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "11311465226335465447"
+        "hash": "1729443540193486299"
       },
       {
         "file": "package.json",
-        "hash": "18177667072986501332"
+        "hash": "14564352400534717605"
       },
       {
         "file": "src/app/app-routing.module.ts",
@@ -342,11 +346,11 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "3298285516620454244"
+        "hash": "10236008781159712422"
       },
       {
         "file": "src/app/app.module.ts",
-        "hash": "10565052670747655211"
+        "hash": "6295976020511607952"
       },
       {
         "file": "src/app/home/home-routing.module.ts",
@@ -358,11 +362,11 @@
       },
       {
         "file": "src/app/home/home.page.html",
-        "hash": "235339890045410150"
+        "hash": "15633187808340178457"
       },
       {
         "file": "src/app/home/home.page.scss",
-        "hash": "3244421341483603138"
+        "hash": "4462797627123066973"
       },
       {
         "file": "src/app/home/home.page.spec.ts",
@@ -370,7 +374,7 @@
       },
       {
         "file": "src/app/home/home.page.ts",
-        "hash": "8519802675345327042"
+        "hash": "16044956648952772200"
       },
       {
         "file": "src/app/services/api.service.spec.ts",
@@ -378,7 +382,7 @@
       },
       {
         "file": "src/app/services/api.service.ts",
-        "hash": "1097617124479240301"
+        "hash": "7487975033497926965"
       },
       {
         "file": "src/assets/icon/favicon.png",

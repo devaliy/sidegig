@@ -1486,6 +1486,15 @@
         "hash": "sha512-bwmka6FdvyXOpc5U6bOyx58S/Yl6r5lO2TK561f//KnjyXjxav25HWwhV4hthq3ZxJBMiAEucl9RK5vzgkP4Lw=="
       }
     },
+    "npm:@capacitor/filesystem": {
+      "type": "npm",
+      "name": "npm:@capacitor/filesystem",
+      "data": {
+        "version": "5.2.1",
+        "packageName": "@capacitor/filesystem",
+        "hash": "sha512-mexkJHUbNhydzfJywEUTIGARlB/HRogrtbjCZdA+mQxOi07T2887a70CwFaYRu1nKLMoKoliTM5UsLSsdl0PlA=="
+      }
+    },
     "npm:@capacitor/haptics": {
       "type": "npm",
       "name": "npm:@capacitor/haptics",
@@ -1511,6 +1520,15 @@
         "version": "5.0.7",
         "packageName": "@capacitor/share",
         "hash": "sha512-4GraggRRxwhstxIdF9JyOEBq4QTufqFOekdB4P9GeiQYWJoA5VraSR1mwy4Trke1VFfaBjz/nGi4WQOJdHIAgg=="
+      }
+    },
+    "npm:@capacitor/splash-screen": {
+      "type": "npm",
+      "name": "npm:@capacitor/splash-screen",
+      "data": {
+        "version": "5.0.7",
+        "packageName": "@capacitor/splash-screen",
+        "hash": "sha512-2aAhhZPi7GU8DDs9dhH4OnMJ3rTscPS/TYKzm03fzhBby6ykSXY6HqKgaWdhfCR4TvLsHf0VKpWZu4ZHD0S7iQ=="
       }
     },
     "npm:@capacitor/status-bar": {
@@ -3140,6 +3158,15 @@
         "version": "4.12.5",
         "packageName": "@stencil/core",
         "hash": "sha512-vSyFjY7XSEx0ufa9SebOd437CvnneaTXlCpuGDhjUDxAjGBlu6ie5qHyubobVGBth//aErc6wZPHc6W75Vp3iQ=="
+      }
+    },
+    "npm:@tokenizer/token": {
+      "type": "npm",
+      "name": "npm:@tokenizer/token",
+      "data": {
+        "version": "0.3.0",
+        "packageName": "@tokenizer/token",
+        "hash": "sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A=="
       }
     },
     "npm:@tufjs/canonical-json": {
@@ -5923,6 +5950,15 @@
         "hash": "sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg=="
       }
     },
+    "npm:file-type": {
+      "type": "npm",
+      "name": "npm:file-type",
+      "data": {
+        "version": "19.0.0",
+        "packageName": "file-type",
+        "hash": "sha512-s7cxa7/leUWLiXO78DVVfBVse+milos9FitauDLG1pI7lNaJ2+5lzPnr2N24ym+84HVwJL6hVuGfgVE+ALvU8Q=="
+      }
+    },
     "npm:filelist": {
       "type": "npm",
       "name": "npm:filelist",
@@ -8542,6 +8578,15 @@
         "hash": "sha512-dUnb5dXUf+kzhC/W/F4e5/SkluXIFf5VUHolW1Eg1irn1hGWjPGdsRcvYJ1nD6lhk8Ir7VM0bHJKsYTx8Jx9OQ=="
       }
     },
+    "npm:peek-readable": {
+      "type": "npm",
+      "name": "npm:peek-readable",
+      "data": {
+        "version": "5.0.0",
+        "packageName": "peek-readable",
+        "hash": "sha512-YtCKvLUOvwtMGmrniQPdO7MwPjgkFBtFIrmfSbYmYuq3tKDV/mcfAhBth1+C3ru7uXIZasc/pHnb+YDYNkkj4A=="
+      }
+    },
     "npm:pend": {
       "type": "npm",
       "name": "npm:pend",
@@ -8882,6 +8927,15 @@
         "version": "2.0.0",
         "packageName": "read-pkg-up",
         "hash": "sha512-1orxQfbWGUiTn9XsPlChs6rLie/AV9jwZTGmu2NZw/CUDJQchXJFYE0Fq5j7+n558T1JhDWLdhyd1Zj+wLY//w=="
+      }
+    },
+    "npm:readable-web-to-node-stream": {
+      "type": "npm",
+      "name": "npm:readable-web-to-node-stream",
+      "data": {
+        "version": "3.0.2",
+        "packageName": "readable-web-to-node-stream",
+        "hash": "sha512-ePeK6cc1EcKLEhJFt/AebMCLL+GgSKhuygrZ/GLaKZYEecIgIECf4UaUuaByiGtzckwR4ain9VzUh95T1exYGw=="
       }
     },
     "npm:readdirp": {
@@ -9586,6 +9640,15 @@
         "hash": "sha512-B3Hgul+z0L9a236FAUC9iZsL+nVHgoCJnqCbN588DjYxvGXaXaaFbfmQ/JhvKjZwsOukuR72XbHv71Qkug0HxA=="
       }
     },
+    "npm:strtok3": {
+      "type": "npm",
+      "name": "npm:strtok3",
+      "data": {
+        "version": "7.0.0",
+        "packageName": "strtok3",
+        "hash": "sha512-pQ+V+nYQdC5H3Q7qBZAz/MO6lwGhoC2gOAjuouGf/VO0m7vQRh8QNMl2Uf6SwAtzZ9bOw3UIeBukEGNJl5dtXQ=="
+      }
+    },
     "npm:supports-preserve-symlinks-flag": {
       "type": "npm",
       "name": "npm:supports-preserve-symlinks-flag",
@@ -9728,6 +9791,15 @@
         "version": "1.0.1",
         "packageName": "toidentifier",
         "hash": "sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA=="
+      }
+    },
+    "npm:token-types": {
+      "type": "npm",
+      "name": "npm:token-types",
+      "data": {
+        "version": "5.0.1",
+        "packageName": "token-types",
+        "hash": "sha512-Y2fmSnZjQdDb9W4w4r1tswlMHylzWIeOKpx0aZH9BgGtACHhrk3OkT52AzwcuqTRBZtvvnTjDBh8eynMulu8Vg=="
       }
     },
     "npm:tree-kill": {
@@ -13488,6 +13560,13 @@
         "type": "static"
       }
     ],
+    "npm:@capacitor/filesystem": [
+      {
+        "source": "npm:@capacitor/filesystem",
+        "target": "npm:@capacitor/core",
+        "type": "static"
+      }
+    ],
     "npm:@capacitor/haptics": [
       {
         "source": "npm:@capacitor/haptics",
@@ -13505,6 +13584,13 @@
     "npm:@capacitor/share": [
       {
         "source": "npm:@capacitor/share",
+        "target": "npm:@capacitor/core",
+        "type": "static"
+      }
+    ],
+    "npm:@capacitor/splash-screen": [
+      {
+        "source": "npm:@capacitor/splash-screen",
         "target": "npm:@capacitor/core",
         "type": "static"
       }
@@ -17955,6 +18041,23 @@
         "type": "static"
       }
     ],
+    "npm:file-type": [
+      {
+        "source": "npm:file-type",
+        "target": "npm:readable-web-to-node-stream",
+        "type": "static"
+      },
+      {
+        "source": "npm:file-type",
+        "target": "npm:strtok3",
+        "type": "static"
+      },
+      {
+        "source": "npm:file-type",
+        "target": "npm:token-types",
+        "type": "static"
+      }
+    ],
     "npm:filelist": [
       {
         "source": "npm:filelist",
@@ -20950,6 +21053,13 @@
         "type": "static"
       }
     ],
+    "npm:readable-web-to-node-stream": [
+      {
+        "source": "npm:readable-web-to-node-stream",
+        "target": "npm:readable-stream",
+        "type": "static"
+      }
+    ],
     "npm:readdirp": [
       {
         "source": "npm:readdirp",
@@ -21984,6 +22094,18 @@
         "type": "static"
       }
     ],
+    "npm:strtok3": [
+      {
+        "source": "npm:strtok3",
+        "target": "npm:@tokenizer/token",
+        "type": "static"
+      },
+      {
+        "source": "npm:strtok3",
+        "target": "npm:peek-readable",
+        "type": "static"
+      }
+    ],
     "npm:supports-color": [
       {
         "source": "npm:supports-color",
@@ -22197,6 +22319,18 @@
       {
         "source": "npm:to-regex-range",
         "target": "npm:is-number",
+        "type": "static"
+      }
+    ],
+    "npm:token-types": [
+      {
+        "source": "npm:token-types",
+        "target": "npm:@tokenizer/token",
+        "type": "static"
+      },
+      {
+        "source": "npm:token-types",
+        "target": "npm:ieee754",
         "type": "static"
       }
     ],
